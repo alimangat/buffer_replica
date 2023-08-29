@@ -1,6 +1,11 @@
 class MainController < ApplicationController
-  def home
+    def home
+      if session[:user_id]
+        @user = User.find_by(id: session[:user_id])  # Assuming User is the name of the model
+    end
   end
+
+  
 
   def about
   end
