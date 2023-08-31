@@ -10,16 +10,15 @@
   <% end %>
 
     <div class="mb-3">
-        <%= form.label :Password %>
-        <%= form.password_field :password, class: "form_control", placeholder: "Password" %>
+      <%= form.label :password, class: "form-label" %>
+      <%= form.password_field :password, class: "form-control", id: "exampleFormControlInput2", placeholder: "Password" %>
     </div>
     <div class="mb-3">
-        <%= form.label :Confirm_Password %>
-        <%= form.password_field :password_confirmation, class: "form_control", placeholder: "Password" %>
+      <%= form.label :password_confirmation, class: "form-label" %>
+      <%= form.password_field :password_confirmation, class: "form-control", id: "exampleFormControlInput3", placeholder: "Password" %>
     </div>
     <div class="mb-3">
-        <%= form.submit "Update Password", class: "btn btn-primary" %>
+      <%= form.submit "Update Password", class: "btn btn-primary" %>
     </div>
-
 <% end %>
 
